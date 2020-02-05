@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Profit Prediction</title>
+  </head>
+
+  <body>
+    <div width: 100%; height: 100% > </div>
+    <h2><div style="text-align:center"><font color="blue">Customer Churn Modelling using Deeplearning(Artificial Neural Network) Algorithm</font></div></h2>
+    <hr>
+    </br>
+    <h4><div style="text-align:center">Enter the values for below mentioned parameters to predict whether Customer with the following information will leave the Bank or Not?</div></h4>
+    </br>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-6'>
+          <form method="POST" action="/predict">
+            <div class="form-group">
+              <label for="CreditScore"><p class="font-weight-bold">CreditScore</p></label>
+              <input type="text" name="CreditScore">
+              <small id="CreditScoreHelp" class="form-text text-muted">Enter CreditScore Range</small>
+              </div>
+
+              <div class="form-group">
+                <label for="Age"><p class="font-weight-bold">Age</p></label>
+                <input type="text" name="Age">
+                <small id="AgeHelp" class="form-text text-muted">Enter the Age of Customer</small>
+                </div>
+
+
+                <div class="form-group">
+                  <label for="Tenure"><p class="font-weight-bold">Tenure</p></label>
+                  <input type="text" name="Tenure">
+                  <small id="TenureHelp" class="form-text text-muted">Enter Tenure with the Bank</small>
+                  </div>
+
+                <div class="form-group">
+                  <label for="Balance"><p class="font-weight-bold">Balance</p></label>
+                  <input type="text" name="Balance">
+                  <small id="BalanceHelp" class="form-text text-muted">Enter Bank Account Balance</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="NumOfProducts"><p class="font-weight-bold">NumOfProducts</p></label>
+                    <input type="text" name="NumOfProducts">
+                    <small id="NumOfProductsHelp" class="form-text text-muted">Enter No of Products of the Bank Customer already had!</small>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="HasCrCard"><p class="font-weight-bold">HasCrCard</p></label>
+                      <input type="text" name="HasCrCard">
+                      <small id="HasCrCardHelp" class="form-text text-muted">Enter No. of Credit cards Customer already had!</small>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="IsActiveMember"><p class="font-weight-bold">IsActiveMember</p></label>
+                        <input type="text" name="IsActiveMember">
+                        <small id="IsActiveMemberHelp" class="form-text text-muted">Enter 1 if already a Active Member else 0</small>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="EstimatedSalary"><p class="font-weight-bold">EstimatedSalary</p></label>
+                          <input type="text" name="EstimatedSalary">
+                          <small id="EstimatedSalaryHelp" class="form-text text-muted">Enter Salary of the Customers</small>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="Geography_France"><p class="font-weight-bold">Geography_France</p></label>
+                            <input type="text" name="Geography_France">
+                            <small id="Geography_FranceHelp" class="form-text text-muted">Enter 1 if Customers belongs to France else 0</small>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="Geography_Spain"><p class="font-weight-bold">Geography_Spain</p></label>
+                              <input type="text" name="Geography_Spain">
+                              <small id="Geography_SpainHelp" class="form-text text-muted">Enter 1 if Customers belongs to Spain else 0</small>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="Geography_Germany"><p class="font-weight-bold">Geography_Germany</p></label>
+                                <input type="text" name="Geography_Germany">
+                                <small id="Geography_GermanyHelp" class="form-text text-muted">Enter 1 if Customers belongs to Germany else 0</small>
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="Gender_Female"><p class="font-weight-bold">Gender_Female</p></label>
+                                  <input type="text" name="Gender_Female">
+                                  <small id="Gender_FemaleHelp" class="form-text text-muted">Enter 1 if gender of the Customers is Female else 0</small>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="Gender_Male"><p class="font-weight-bold">Gender_Male</p></label>
+                                    <input type="text" name="Gender_Male">
+                                    <small id="Gender_MaleHelp" class="form-text text-muted">Enter 1 if gender of the Customers is Male else 0</small>
+                                    </div>
+
+                        <input class='btn btn-primary' type='submit' value='Submit'>
+            </form>
+
+          </div>
+          </div>
+          </div>
+  </body>
+
+</html>
