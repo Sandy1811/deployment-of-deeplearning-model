@@ -2,8 +2,6 @@
 # Part1 - Data Preporcessing and Importing Libraries
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 import pickle
 
 # Importing the Keras libraries and packages
