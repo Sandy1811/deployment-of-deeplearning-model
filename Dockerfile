@@ -12,8 +12,8 @@ WORKDIR /app
 #Run Python program
 CMD ["python", "app.py"]
 
-#Open port 5000
-EXPOSE 5000
+# Make port 80 available to the world outside this container
+EXPOSE 80
 
 #Set Environment Variable
 ENV name base1
