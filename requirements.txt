@@ -1,5 +1,5 @@
 Flask
-joblib==0.14.1
+joblib==1.2.0
 pandas
 numpy
 pickleshare==0.7.5
